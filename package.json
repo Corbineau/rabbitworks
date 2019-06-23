@@ -1,0 +1,20 @@
+{
+  "name": "rabbitworks",
+  "version": "1.0.0",
+  "description": "personal portfolio site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Corbineau/rabbitworks.git"
+  },
+  "author": "Rabbit Stoddard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Corbineau/rabbitworks/issues"
+  },
+  "homepage": "https://github.com/Corbineau/rabbitworks#readme"
+}
