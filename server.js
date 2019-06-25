@@ -5,11 +5,17 @@
 // ==============================================================================
 
 var express = require("express");
-var cors = require('cors');
+var request = require("request");
 // var config = require("./connection.js");
 var bodyParser = require("body-parser")
 // var mongojs = require("mongojs");
 var routes = require("./routes");
+
+
+var corsOptions = {
+    origin: process.env.ORIGIN_URL || "http://localhost",
+    optionsSuccessStatus: 200
+  };
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -29,9 +35,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors())
  
-app.get('/products/:id', function (req, res, next) {
-  res.json({msg: 'This is CORS-enabled for all origins!'})
-})
+app.use("/cors/*", function(req, res) {
+    req.pipe(request(req.params[0])).pipe(res);
+  });
 
 // ================================================================================
 // DATABASE
@@ -40,7 +46,7 @@ app.get('/products/:id', function (req, res, next) {
 
 
 // Use mongojs to hook the database to the db variable
-// var db = mongojs(config.databade);
+// var db = mongojs(config.database);
 
 
 // ================================================================================
@@ -64,5 +70,5 @@ app.use(express.static("./public"));
 
 
   app.listen(PORT, function () {
-    console.log("App listening on PORT " + PORT);
+    console.log("CORS-enabled web server listening on port " + PORT);
   });
