@@ -5,9 +5,10 @@
 // ==============================================================================
 
 var express = require("express");
-var config = require("./connection.js");
+var cors = require('cors');
+// var config = require("./connection.js");
 var bodyParser = require("body-parser")
-var mongojs = require("mongojs");
+// var mongojs = require("mongojs");
 var routes = require("./routes");
 
 // ==============================================================================
@@ -26,6 +27,11 @@ var PORT = process.env.PORT || 3000;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors())
+ 
+app.get('/products/:id', function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'})
+})
 
 // ================================================================================
 // DATABASE
@@ -34,7 +40,7 @@ app.use(bodyParser.json());
 
 
 // Use mongojs to hook the database to the db variable
-var db = mongojs(config.databade);
+// var db = mongojs(config.databade);
 
 
 // ================================================================================
