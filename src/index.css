@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  min-height: 100vh;
+  margin-top:0;
+  padding-top:0;
+  background-color: lightcoral;
+  background-image: url(./images/sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+
+}
+
+/* main elements */
+
+h1 {
+  padding: 10px 0px;
+  font-size: 2.5rem;
+  font-family: 'Fredericka the Great', cursive;
+
+}
+
+h2 {
+  padding: 5px 0px;
+  font-size: 1.25rem;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+a {
+  color: indigo;
+}
+
+a:visited {
+  color: darkcyan;
+}
+
+a:hover {
+  color: coral;
+}

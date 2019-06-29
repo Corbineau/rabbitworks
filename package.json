@@ -1,34 +1,32 @@
 {
   "name": "rabbitworks",
-  "version": "1.0.0",
-  "description": "personal portfolio site",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Corbineau/rabbitworks.git"
-  },
-  "engines": {
-    "node": "12.x"
-  },
-  "author": "Rabbit Stoddard",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Corbineau/rabbitworks/issues"
-  },
-  "homepage": "https://github.com/Corbineau/rabbitworks#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "next": "^8.1.0",
-    "nodemailer": "^6.2.1",
-    "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "request": "^2.88.0"
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Rabbit Things</title>
-    <link href="./assets/css/reset.css" type="text/css" rel="stylesheet">
-    <link href="./assets/css/style.css" type="text/css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Fredericka+the+Great|Maven+Pro:400,500,700"
         rel="stylesheet">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-<body>
-    <nav id="the-head">
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Rabbit Stoddard</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="navbar"></div>
+    <div id="root"></div>
+    <div id="footer"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-    </nav>
-    <div class="wrapper">
-        <div class="another_wrapper">
-            <div class="content" id="content">
-                <header>
-                    <h1>About Me</h1>
-                </header>
-                <div class="bio">
-                    <img class="bioimage" src="./assets/images/Rabbit_hobbes.png" alt="me." />
-                    <p>
-                        I'm Rabbit Stoddard, and I do all the things, and also none of the things. I like chill, not writing bios, and you. Sometimes, I read tarot cards, run/play LARPS, create <a href="https://conlang.org/" target="_blank">conlangs</a>, illuminate manuscripts, and engage in other <a href="https://www.patreon.com/caudelac" target="_blank">secondary world fiction</a>, in addition to actual work.
-                    </p>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-                    <p>
-                        Currently, I am doing this <a href="https://bootcamp.pe.gatech.edu/coding/landing-ftpt/"
-                            target="_blank">coding bootcamp thang</a>, so that I can turn some of these ideas into browser games using javascript and Twine, as well as understand more of the
-                        development cycle and needs of developers. I a SAFE4 Agile Certified Scrum Master, which means I help make sure that coders can spend their time coding, instead of doing paperwork or answering questions about when they will be done coding. I have over 10 years of software experience in Agile environments, particulary with Agile transformation, using both Scrum and Kanban. It is a fun thing, and I enjoy it, but there is always more to learn.
-                    </p>
-                    <p class="resume" id="my-resume">
-                        <a href="assets/images/Rabbit_Stoddard_Resume2019.pdf" alt="They're pretty useful I think.">Resume</a> | <a href="https://github.com/Corbineau" alt="Code lives here.">Github</a> | <a href="https://www.linkedin.com/in/rabbitseagraves/" alt="the true test of humility.">LinkedIn</a> 
-                    </p>    
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p>
-            copyright &#169;
-        </p>
-    </footer>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>

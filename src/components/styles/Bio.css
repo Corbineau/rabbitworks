@@ -1,0 +1,47 @@
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.bio {
+  border-top: 2px solid darkgrey;
+  padding: 10px;
+  background-color: white;
+}
+
+.bio p {
+  margin-top: 10px;
+}
+
+
+/* index elements */
+
+img {
+  float: left;
+  height: 150px;
+}
+
+.bioimage {
+  margin: 15px;
+}
+
+.resume {
+  text-align: center;
+  padding-top: 5px; 
+}
+
+.resume a {
+
+  font-family: 'Amatic SC', cursive;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+
+}
+
+.resume a:hover {
+  color: #33DBFF;
+  text-decoration: underline;
+  font-weight: bolder;
+}
