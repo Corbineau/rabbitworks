@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/Corbineau/rabbitworks.git"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "author": "Rabbit Stoddard",
   "license": "ISC",
   "bugs": {
