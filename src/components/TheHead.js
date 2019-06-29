@@ -4,12 +4,12 @@ import './theHead.css';
 function TheHead() {
   return (
     <nav>
-        <div class="navset">
+        <div className="navset">
         <div id="name">
             <h1>Rabbit Stoddard</h1>
         </div>
-        <div class="navbox">
-            <ul class="navlist">
+        <div className="navbox">
+            <ul className="navlist">
                 <li><a href="/index">About Me</a> </li> |
                 <li><a href="/portfolio">Portfolio</a> </li> |
                 <li><a href="/contact">Contact</a> </li>

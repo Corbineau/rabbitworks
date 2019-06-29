@@ -6,17 +6,17 @@ import './App.css';
 
 function App() {
   return (
-    <container>
+    <div>
           <TheHead />
-      <div class="wrapper">
-        <div class="another_wrapper" id="swap">
+      <div className="wrapper">
+        <div className="another_wrapper" id="swap">
           <Router />
         </div>
       </div>
       <footer id="the-foot">
           <TheFoot />
       </footer>
-    </container>
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@ function TheFoot() {
   return  (
     <footer>
         <p>
-            copyright &#169;
+            copyright 2019;
         </p>
     </footer>
   );
