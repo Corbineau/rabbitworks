@@ -1,5 +1,10 @@
+const express = require("express");
+const router = express.Router();
+
+
+
 // POST route from contact form
-app.post('/contact', function (req, res) {
+router.post('/contact', function (req, res) {
     let mailOpts, smtpTrans;
     smtpTrans = nodemailer.createTransport({
       host: 'smtp.gmail.com',
@@ -25,3 +30,5 @@ app.post('/contact', function (req, res) {
       }
     });
   });
+
+module.exports = router;

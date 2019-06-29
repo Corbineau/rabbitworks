@@ -4,15 +4,17 @@
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================
 
-var express = require("express");
-var request = require("request");
-// var config = require("./connection.js");
-var bodyParser = require("body-parser")
-// var mongojs = require("mongojs");
-var routes = require("./routes");
+const express = require("express");
+const request = require("request");
+// const config = require("./connection.js");
+const bodyParser = require("body-parser")
+// const mongojs = require("mongojs");
+const pageRouter = require("./routes/htmlRoutes");
+// const mailRouter = require("./routes/mailRoutes");
+// const apiRouter = require("./routes/apiRoutes");
 
 
-// var corsOptions = {
+// const corsOptions = {
 //     origin: process.env.ORIGIN_URL || "http://localhost",
 //     optionsSuccessStatus: 200
 //   };
@@ -23,10 +25,10 @@ var routes = require("./routes");
 // ==============================================================================
 
 // Tells node that we are creating an "express" server
-var app = express();
+const app = express();
 
 // Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000;
 
 
 
@@ -46,7 +48,7 @@ app.use(bodyParser.json());
 
 
 // Use mongojs to hook the database to the db variable
-// var db = mongojs(config.database);
+// const db = mongojs(config.database);
 
 
 // ================================================================================
@@ -57,7 +59,9 @@ app.use(bodyParser.json());
 
 // Import routes and give the server access to them.
 
-app.use(routes);
+app.use("/", pageRouter);
+// app.use("/", mailRouter);
+// app.use("/api", apiRouter);
 
 
 // Static directory
