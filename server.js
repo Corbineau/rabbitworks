@@ -12,10 +12,10 @@ var bodyParser = require("body-parser")
 var routes = require("./routes");
 
 
-var corsOptions = {
-    origin: process.env.ORIGIN_URL || "http://localhost",
-    optionsSuccessStatus: 200
-  };
+// var corsOptions = {
+//     origin: process.env.ORIGIN_URL || "http://localhost",
+//     optionsSuccessStatus: 200
+//   };
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -33,11 +33,11 @@ var PORT = process.env.PORT || 8000;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors())
+// app.use(cors())
  
-app.use("/cors/*", function(req, res) {
-    req.pipe(request(req.params[0])).pipe(res);
-  });
+// app.use("/cors/*", function(req, res) {
+//     req.pipe(request(req.params[0])).pipe(res);
+//   });
 
 // ================================================================================
 // DATABASE
@@ -46,7 +46,7 @@ app.use("/cors/*", function(req, res) {
 
 
 // Use mongojs to hook the database to the db variable
-var db = mongojs(config.database);
+// var db = mongojs(config.database);
 
 
 // ================================================================================
@@ -70,5 +70,5 @@ app.use(express.static("./public"));
 
 
   app.listen(PORT, function () {
-    console.log("CORS-enabled web server listening on port " + PORT);
+    console.log("app listening on port " + PORT);
   });
