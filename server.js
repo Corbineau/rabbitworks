@@ -26,7 +26,7 @@ var corsOptions = {
 var app = express();
 
 // Sets an initial port. We"ll use this later in our listener
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8000;
 
 
 
@@ -46,7 +46,7 @@ app.use("/cors/*", function(req, res) {
 
 
 // Use mongojs to hook the database to the db variable
-// var db = mongojs(config.database);
+var db = mongojs(config.database);
 
 
 // ================================================================================
