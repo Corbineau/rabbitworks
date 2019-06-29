@@ -1,2 +1,4 @@
 
-const about = 
+const about = {
+    
+}
