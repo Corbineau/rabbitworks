@@ -2,7 +2,8 @@
   "name": "rabbitworks",
   "version": "0.1.0",
   "engines": {
-    "node": "12.*"
+    "node": "12.*",
+    "npm": "6.*"
   },
   "private": true,
   "dependencies": {
