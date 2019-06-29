@@ -14,8 +14,8 @@ app.use(express.static(path.join(__dirname, 'rabbitworks/build')));
 // });
 
 // Handles any requests that don't match the ones above
-app.get('*', (req,res) =>{
+// app.get('*', (req,res) =>{
     
-});
+// });
 
 const port = process.env.PORT || 5000;

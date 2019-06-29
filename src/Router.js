@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Bio from './components/Bio';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Nah from './components/Nah';
 
 
 class Router extends Component {
@@ -14,6 +15,7 @@ class Router extends Component {
             <Route path='/index' component={Bio}/>
             <Route path='/contact' component={Contact}/>
             <Route path='/portfolio' component={Portfolio}/>
+            <Route path='*' component={Nah}/>
           </Switch>
         </div>
       )
