@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/TheHead.css';
+import './theHead.css';
 
 function TheHead() {
   return (
@@ -10,9 +10,9 @@ function TheHead() {
         </div>
         <div class="navbox">
             <ul class="navlist">
-                <li><a href="index.html">About Me</a> </li> |
-                <li><a href="portfolio.html">Portfolio</a> </li> |
-                <li><a href="contact.html">Contact</a> </li>
+                <li><a href="/index">About Me</a> </li> |
+                <li><a href="/portfolio">Portfolio</a> </li> |
+                <li><a href="/contact">Contact</a> </li>
             </ul>
         </div>
     </div>

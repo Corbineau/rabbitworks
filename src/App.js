@@ -1,6 +1,5 @@
 import React from 'react';
-// import logo from './logo.svg';
-import Bio from './components/Bio';
+import Router from './Router.js';
 import TheHead from './components/TheHead';
 import TheFoot from './components/TheFoot';
 import './App.css';
@@ -11,7 +10,7 @@ function App() {
           <TheHead />
       <div class="wrapper">
         <div class="another_wrapper" id="swap">
-          <Bio />
+          <Router />
         </div>
       </div>
       <footer id="the-foot">
