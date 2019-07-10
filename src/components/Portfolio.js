@@ -1,15 +1,20 @@
-import React from "react";
+import {React, Component}from "react";
 import './Portfolio.css';
 
 //TODO: re-write this to make the folioCards repeatable components.
 
-function Portfolio() {
+class Portfolio extends Component {
+    state={
+        
+    }
+
     return (
         <div className="content">
             <div className="content">
                 <header>
                     <h1>Portfolio</h1>
                 </header>
+                <Card />
                 <div className="bio foliobox">
                     <div className="foliocard">
                         <a href="https://corbineau.github.io/Hangman/">
