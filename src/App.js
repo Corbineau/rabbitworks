@@ -10,7 +10,9 @@ function App() {
           <TheHead />
       <div className="wrapper">
         <div className="another_wrapper" id="swap">
+        
           <Router />
+          
         </div>
       </div>
       <footer id="the-foot">

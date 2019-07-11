@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import {React, Component}from "react";
+=======
+import React from "react";
+import Cards from './Cards'
+>>>>>>> cca07590bb4b060924a493b7642106d7e612edd2
 import './Portfolio.css';
+
 
 //TODO: re-write this to make the folioCards repeatable components.
 
