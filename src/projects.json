@@ -25,42 +25,42 @@
     },
     {
         "id": 4,
-        "appName": "Hangman",
-        "appLink": "https://corbineau.github.io/Hangman/",
-        "gitLink": "https://github.com/Corbineau/Hangman/",
-        "img": "./images/wormhole_clip.png",
-        "alt": "Spacey-Times Word Guess Game"
+        "appName": "Poetry",
+        "appLink": "https://corbineau.github.io/Poetry/",
+        "gitLink": "https://github.com/Corbineau/Poetry/",
+        "img": "./images/poetry.jpeg",
+        "alt": "Simple Poetry Generator"
     },
     {
         "id": 5,
-        "appName": "Hangman",
-        "appLink": "https://corbineau.github.io/Hangman/",
-        "gitLink": "https://github.com/Corbineau/Hangman/",
-        "img": "./images/wormhole_clip.png",
-        "alt": "Spacey-Times Word Guess Game"
+        "appName": "I like my Coffee Black",
+        "appLink": "https://coffee-black.herokuapp.com/",
+        "gitLink": "https://github.com/imanischult/blackcoffee",
+        "img": "./images/coffee.png",
+        "alt": "Just like my Power"
     },
     {
         "id": 6,
-        "appName": "Hangman",
-        "appLink": "https://corbineau.github.io/Hangman/",
-        "gitLink": "https://github.com/Corbineau/Hangman/",
-        "img": "./images/wormhole_clip.png",
-        "alt": "Spacey-Times Word Guess Game"
+        "appName": "Shop of Many Things",
+        "vidLink": "#",
+        "gitLink": "https://github.com/Corbineau/shopofmanythings/",
+        "img": "./images/Screen Shot 2019-05-24 at 5.47.17 PM.png",
+        "alt": "upgrade your gear"
     },
     {
         "id": 7,
-        "appName": "Hangman",
-        "appLink": "https://corbineau.github.io/Hangman/",
-        "gitLink": "https://github.com/Corbineau/Hangman/",
-        "img": "./images/wormhole_clip.png",
-        "alt": "Spacey-Times Word Guess Game"
+        "appName": "Hi, Human!",
+        "appLink": "https://hihuman.herokuapp.com",
+        "gitLink": "https://github.com/Corbineau/ItsAmazing/",
+        "img": "./images/icons.png",
+        "alt": "Hi, Human. I'm also a human."
     },
     {
         "id": 8,
-        "appName": "Hangman",
-        "appLink": "https://corbineau.github.io/Hangman/",
-        "gitLink": "https://github.com/Corbineau/Hangman/",
-        "img": "./images/wormhole_clip.png",
-        "alt": "Spacey-Times Word Guess Game"
-    },
+        "appName": "Liri",
+        "vidLink": "https://asciinema.org/a/AFY1EoEVLay1K9tBK6RLKMhic",
+        "gitLink": "https://corbineau.github.com/Liri/",
+        "img": "./images/liricast.png",
+        "alt": "Search for meaning"
+    }
 ]
