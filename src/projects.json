@@ -62,5 +62,13 @@
         "gitLink": "https://corbineau.github.com/Liri/",
         "img": "./images/liricast.png",
         "alt": "Search for meaning"
+    },
+    {
+        "id": 9,
+        "appName": "Memetic",
+        "appLink": "https://corbineau.github.io/Memetic/",
+        "gitLink": "https://github.com/Corbineau/Memetic/",
+        "img": "./images/labs.gif",
+        "alt": "Make mine memetic"
     }
 ]
