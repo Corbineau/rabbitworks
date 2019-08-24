@@ -1,18 +1,25 @@
-import React from "react";
+import {React, Component }from "react";
 import Cards from './Cards'
 import './Portfolio.css';
 
 
 //TODO: re-write this to make the folioCards repeatable components.
 
-function Portfolio() {
-    return (
+class Portfolio extends Component {
+    state = {
+        cards : []
+    }
+
+   render() {
         <div className="content">
             <div className="content">
                 <header>
                     <h1>Portfolio</h1>
                 </header>
                 <div className="bio foliobox">
+                    {this.state.cards.map(card => {
+                        <Cards key={card._id} />
+                    })}
                     <div className="foliocard">
                         <a href="https://corbineau.github.io/Hangman/">
                             <img className="folioimg" src="./images/wormhole_clip.png"
@@ -85,7 +92,7 @@ function Portfolio() {
                 </div>
             </div>
         </div>
-    );
+   };
 }
 
 export default Portfolio;
