@@ -6,7 +6,7 @@ function Cards(props) {
     return (
 
         <div className="foliocard">
-            <a href={appLink} target="_blank">
+            <a href={appLink} target="_blank" rel="noopener noreferrer">
                 <img className="folioimg" src={img}
                     alt={alt} />
             </a>
